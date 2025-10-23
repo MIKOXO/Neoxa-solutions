@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full backdrop-blur-lg fixed top-0 left-0 z-50">
+    <header className="w-full bg-white dark:bg-DarkBg transition-colors duration-300 backdrop-blur-lg fixed top-0 left-0 z-50 border-b border-gray-200 dark:border-DarkBgSecondary">
       <div className="mx-auto container px-10 py-5 flex flex-row items-center justify-between text-LightText dark:text-DarkText">
         {/* Logo */}
         <div>
