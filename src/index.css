@@ -7,3 +7,7 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
+.link {
+  @apply relative transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-[2px] after:dark:bg-LightBg after:bg-DarkBg after:transition-all after:duration-300 hover:after:w-full;
+}
