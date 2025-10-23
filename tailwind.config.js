@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkBg: "hsl(0, 0%, 10%)",
-        darkBgSecondary: "hsl(0, 0%, 15%)",
-        darkText: "hsl(0, 0%, 90%)",
-        lightBg: "hsl(0, 0%, 100%)",
-        lightText: "hsl(0, 0%, 10%)",
+        DarkBg: "hsl(0, 0%, 10%)",
+        DarkBgSecondary: "hsl(0, 0%, 15%)",
+        DarkText: "hsl(0, 0%, 90%)",
+        LightBg: "hsl(0, 0%, 100%)",
+        LightText: "hsl(0, 0%, 10%)",
       },
     },
   },
