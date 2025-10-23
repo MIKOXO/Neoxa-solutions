@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-DarkBg transition-colors duration-300">
+    <div className="min-h-screen">
       <Navbar />
+      <Hero />
     </div>
   );
 };
