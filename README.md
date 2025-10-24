@@ -1,16 +1,59 @@
-# React + Vite
+# Neoxa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React landing page built with Vite and Tailwind CSS. Neoxa is a small single-page project showcasing a clean design, theme toggle, and reusable components for a simple company or product homepage.
 
-Currently, two official plugins are available:
+## Screenshot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Homepage screenshot](public/Home.png)
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Minimal, responsive layout for a modern landing page
+- Theme toggle (light/dark) using a small custom hook
+- Reusable components: Navbar, Hero, Services, About, Footer
+- Built with Vite for fast dev server and Tailwind CSS for utility-first styling
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (JSX)
+- Vite
+- Tailwind CSS
+- Plain JavaScript (no TypeScript)
+
+## Quick Start
+
+1. Install dependencies
+
+```bash
+# from project root
+npm install
+```
+
+2. Start the development server
+
+```bash
+npm run dev
+```
+
+3. Build for production
+
+```bash
+npm run build
+```
+
+4. Preview the production build locally
+
+```bash
+npm run preview
+```
+
+Note: These scripts assume standard Vite entries in `package.json`.
+
+## Project Structure (high level)
+
+- `index.html` — app entry
+- `src/main.jsx` — React entry
+- `src/App.jsx` — app root
+- `src/components/` — UI components (Navbar, Hero, Services, About, Footer, ThemeToggle)
+- `src/hooks/useTheme.js` — theme toggle hook
+- `public/` — static assets
