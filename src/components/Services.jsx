@@ -27,7 +27,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="pt-10 lg:py-24 bg-LightBg dark:bg-DarkBg transition-colors duration-300">
+    <section
+      id="services"
+      className="pt-10 lg:py-24 bg-LightBg dark:bg-DarkBg transition-colors duration-300"
+    >
       <div className="mx-auto container pt-7 lg:pt-20 px-5 lg:px-10 flex flex-col items-center justify-center text-LightText dark:text-DarkText">
         <div className="text-center">
           <h1 className="text-[38px] lg:text-[50px] font-bold">Our Services</h1>

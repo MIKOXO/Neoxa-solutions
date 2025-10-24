@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="pt-10 lg:pt-20 bg-LightBg dark:bg-DarkBg text-LightText dark:text-DarkText transition-colors duration-300 ">
+    <footer
+      id="footer"
+      className="pt-10 lg:pt-20 bg-LightBg dark:bg-DarkBg text-LightText dark:text-DarkText transition-colors duration-300 "
+    >
       {/* Horizontal Line */}
       <div className="h-[0.1px] w-full bg-gray-200 dark:bg-DarkBgSecondary mb-3 rounded-full" />
       <div className="mx-auto container pt-7 lg:py-10 px-5 lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">

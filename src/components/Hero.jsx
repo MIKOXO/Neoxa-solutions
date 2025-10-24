@@ -3,7 +3,10 @@ import heroIllustration from "../assets/hero-illustration.png";
 
 const Hero = () => {
   return (
-    <section className="pb-5 bg-LightBg dark:bg-DarkBg transition-colors duration-300">
+    <section
+      id="home"
+      className="pb-5 pt-20 bg-LightBg dark:bg-DarkBg transition-colors duration-300"
+    >
       <div className="mx-auto container pt-7 lg:pt-20 px-5 lg:px-10 flex flex-col-reverse lg:flex-row items-center justify-between">
         {/* Text Content */}
         <div className="text-LightText dark:text-DarkText animate-fade-in text-center lg:text-left">

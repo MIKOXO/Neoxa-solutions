@@ -6,8 +6,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
+    }
+  };
+
   return (
-    <header className="w-full bg-white dark:bg-DarkBg transition-colors duration-300 backdrop-blur-lg z-50 border-b border-gray-200 dark:border-DarkBgSecondary">
+    <header className="w-full bg-white/90 dark:bg-DarkBg/80 transition-colors duration-300 backdrop-blur-xl z-50 border-b border-gray-200 dark:border-DarkBgSecondary fixed top-0 left-0 right-0">
       <div className="mx-auto container px-5 lg:px-10 py-5 flex flex-row items-center justify-between text-LightText dark:text-DarkText">
         {/* Logo */}
         <div>
@@ -18,24 +26,30 @@ const Navbar = () => {
         <nav className="flex flex-row items-center justify-center gap-10">
           <ul className="hidden lg:flex flex-row gap-7">
             <li className="inline-block mx-4">
-              <a href="#" className="link">
+              <button onClick={() => scrollToSection("home")} className="link">
                 Home
-              </a>
+              </button>
             </li>
             <li className="inline-block mx-4">
-              <a href="#" className="link">
+              <button onClick={() => scrollToSection("about")} className="link">
                 About
-              </a>
+              </button>
             </li>
             <li className="inline-block mx-4">
-              <a href="#" className="link">
+              <button
+                onClick={() => scrollToSection("services")}
+                className="link"
+              >
                 Services
-              </a>
+              </button>
             </li>
             <li className="inline-block mx-4">
-              <a href="#" className="link">
+              <button
+                onClick={() => scrollToSection("footer")}
+                className="link"
+              >
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
 
@@ -77,24 +91,36 @@ const Navbar = () => {
             >
               <ul className="flex flex-col gap-7 items-center justify-center">
                 <li className="inline-block mx-4">
-                  <a href="#" className="">
+                  <button
+                    onClick={() => scrollToSection("home")}
+                    className="link"
+                  >
                     Home
-                  </a>
+                  </button>
                 </li>
                 <li className="inline-block mx-4">
-                  <a href="#" className="">
+                  <button
+                    onClick={() => scrollToSection("about")}
+                    className="link"
+                  >
                     About
-                  </a>
+                  </button>
                 </li>
                 <li className="inline-block mx-4">
-                  <a href="#" className="">
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="link"
+                  >
                     Services
-                  </a>
+                  </button>
                 </li>
                 <li className="inline-block mx-4">
-                  <a href="#" className="">
+                  <button
+                    onClick={() => scrollToSection("footer")}
+                    className="link"
+                  >
                     Contact
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

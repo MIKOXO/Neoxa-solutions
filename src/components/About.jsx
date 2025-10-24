@@ -2,7 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="pt-10 lg:pt-20 bg-LightBg dark:bg-DarkBg transition-colors duration-300">
+    <section
+      id="about"
+      className="pt-10 lg:pt-20 bg-LightBg dark:bg-DarkBg transition-colors duration-300"
+    >
       <div className="mx-auto container pt-7 lg:pt-20 px-5 lg:px-10 flex flex-col items-center justify-center text-LightText dark:text-DarkText">
         <h1 className="text-[38px] lg:text-[50px] font-bold">About Us</h1>
         <div className="h-1 w-24 bg-LightText dark:bg-DarkText mx-auto mb-8 rounded-full" />
